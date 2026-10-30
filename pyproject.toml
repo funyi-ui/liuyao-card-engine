@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "liuyao-card-engine"
+version = "0.1.0"
+description = "육효카드 엔진 — 카드 6장으로 본괘·변괘, 납갑, 육친, 세응, 육신, 공망을 계산"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+liuyao-card = "liuyao_card.cli:main"
+
+[tool.setuptools]
+packages = ["liuyao_card"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
